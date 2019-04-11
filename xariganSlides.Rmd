@@ -1,0 +1,100 @@
+---
+title: "Some Supervised Learning Case Study"
+author: "Student 1, Student 2, Student 3"
+date: "updated: `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    seal: true
+    # lib_dir: libs
+    css: [appstate.css, appstate-fonts.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      titleSlideClass: [top, right, inverse]
+      # autoplay: 40000
+      # countdown: 30000
+---
+class: inverse, center, middle
+
+```{r label = "setup", include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, warning = FALSE, message = FALSE)
+library(ISLR)
+library(tidyverse)
+```
+
+
+# All models are wrong, but some are useful
+
+---
+# Here is ours:
+
+$p(X) = \text{Pr}(Y=1|X) = \frac{\exp(\beta_0 + \beta_1X)}{1 + \exp(\beta_0 + \beta_1X)}$ 
+
+--
+
+* How about a gif?
+
+`r knitr::include_graphics("./images/citing.gif")`
+
+---
+class: inverse, center, middle
+
+# We discovered that...
+
+---
+
+# Using `ggplot2` to illustrate the model
+
+
+
+
+```{r, echo = FALSE, fig.align = "center", fig.width = 7, fig.height = 5}
+Default$default_bin <- ifelse(Default$default == "Yes", 1, 0)
+ggplot(data = Default, aes(x = balance, y = default_bin)) + 
+  geom_jitter(width = 0, height = 0.05, alpha = 0.1) + 
+  theme_bw() + 
+  labs(x = "Balance", 
+       y = "Probability of Default") + 
+  geom_smooth(method = "glm", se = FALSE, 
+              method.args = list(family = binomial(link = "logit")),
+              color = "purple") 
+```
+
+???
+Write everything you want to say about the model here.  Pressing shift p in the slides will put you in presentation mode.
+
+---
+
+# New slide
+
+
+
+## Conclusions:
+
+
+???
+
+Here you can describe more for your presentation mode to go along with your numbered points.
+
+1. Describe lalala
+2. Talk about fa fa fa
+3. Well like it says folks, that is it!
+
+--
+
+1. La la la
+
+--
+
+2. Fa fa fa
+
+--
+
+3. That's all folks
+
+--
+
+
+
+ 

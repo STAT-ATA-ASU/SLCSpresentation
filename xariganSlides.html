@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Some Supervised Learning Case Study</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Student 1, Student 2, Student 3" />
+    <link rel="stylesheet" href="appstate.css" type="text/css" />
+    <link rel="stylesheet" href="appstate-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: top, right, inverse, title-slide
+
+# Some Supervised Learning Case Study
+### Student 1, Student 2, Student 3
+### updated: 2019-04-11
+
+---
+
+class: inverse, center, middle
+
+
+
+
+# All models are wrong, but some are useful
+
+---
+# Here is ours:
+
+`\(p(X) = \text{Pr}(Y=1|X) = \frac{\exp(\beta_0 + \beta_1X)}{1 + \exp(\beta_0 + \beta_1X)}\)` 
+
+--
+
+* How about a gif?
+
+![](./images/citing.gif)&lt;!-- --&gt;
+
+---
+class: inverse, center, middle
+
+# We discovered that...
+
+---
+
+# Using `ggplot2` to illustrate the model
+
+
+
+
+&lt;img src="xariganSlides_files/figure-html/unnamed-chunk-1-2.png" style="display: block; margin: auto;" /&gt;
+
+???
+Write everything you want to say about the model here.  Pressing shift p in the slides will put you in presentation mode.
+
+---
+
+# New slide
+
+
+
+## Conclusions:
+
+
+???
+
+Here you can describe more for your presentation mode to go along with your numbered points.
+
+1. Describe lalala
+2. Talk about fa fa fa
+3. Well like it says folks, that is it!
+
+--
+
+1. La la la
+
+--
+
+2. Fa fa fa
+
+--
+
+3. That's all folks
+
+--
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+})();
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
