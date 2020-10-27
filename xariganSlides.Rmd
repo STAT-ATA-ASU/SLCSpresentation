@@ -1,6 +1,6 @@
 ---
 title: "Some Supervised Learning Case Study"
-author: "Student 1, Student 2, Student 3"
+author: "Your Name Here"
 date: "updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
